@@ -32,14 +32,10 @@ bool checkEqualPaths(Node* root, int depth, int& leafDepth) {
 }
 
 bool equalPaths(Node* root) {
-    if (!root) 
+    /*if (!root) 
     {
         return true;//empty tree valid
-    }
+    }*/
     int leafDepth = -1;
-    if (root->left == nullptr && root->right == nullptr) 
-    {
-      return true;
-    }
     return checkEqualPaths(root, 0, leafDepth);
 }
